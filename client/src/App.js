@@ -3,6 +3,7 @@ import Home from './views/Home';
 import { SocketProvider } from './context/SocketContext';
 
 function App() {
+
   return (
     <SocketProvider>
       <div className="App">
