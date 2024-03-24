@@ -1,10 +1,14 @@
-import React from "react";
+import React from 'react';
+import Home from './views/Home';
+import { SocketProvider } from './context/SocketContext';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <SocketProvider>
+      <div className="App">
+        <Home />
+      </div>
+    </SocketProvider>
   );
 }
 

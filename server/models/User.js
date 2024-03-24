@@ -7,10 +7,10 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
-  roomsJoined: [{
+  roomJoined: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Session'
-  }],
+  },
 });
 
 // Create a User model based on the user schema
