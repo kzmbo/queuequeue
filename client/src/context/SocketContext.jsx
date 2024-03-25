@@ -8,7 +8,7 @@ export const useSocket = () => {
 };
 
 export const SocketProvider = ({ children }) => {
-  const socket = io.connect('http://localhost:4000/');
+  const socket = io.connect('http://localhost:3001');
 
   return (
     <SocketContext.Provider value={socket}>
